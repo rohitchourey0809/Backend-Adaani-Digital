@@ -8,8 +8,8 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   profilePhoto: { type: String },
   pastExperience: { type: String },
-  skillSets: { type: [String] },
-  educationalQualification: { type: String },
+  skillSets: { type: [String], default: [] },
+  educationalQualification: { type: String, default: "" },
 });
 
 userSchema.pre("save", async function (next) {
