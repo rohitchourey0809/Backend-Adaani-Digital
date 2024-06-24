@@ -21,5 +21,22 @@ This repository contains the backend code for the Adani Solutions project. The b
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/rohitchourey0809/backend-new-adaan.git
-cd backend-new-adaan
+git clone https://github.com/rohitchourey0809/Backend-Adaani-Digital
+
+
+
+API Endpoints
+
+
+## Auth Routes
+
+- POST /api/register: Register a new user
+- POST /api/login: Login a user
+- POST /api/send-otp: Send OTP to the user's phone number
+- POST /api/verify-otp: Verify the OTP
+
+
+## User Routes
+
+- GET /api/user: Get the logged-in user's profile
+- PUT /api/user: Update the logged-in user's profile
